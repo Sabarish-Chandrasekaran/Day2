@@ -1,0 +1,43 @@
+Q1.List 5 difference between Browser JS(console) v Nodejs
+   Node js :
+   1.Node doesn’t have a predefined “window” object cause it doesn’t have a window to draw anything.
+   2.“location” object is related to a particular url; that means it is for page specific. So, node doesn’t require that.
+   3.Ofcourse Node doesn’t have “document” object also, cause it never have to render anything in a page.
+   4.Node has “global”, which is a predefined global object. It contains several functions that are not available in browsers, cause they are needed for server side works only.
+   5.“require” object is predefined in Node which is used to include modules in the app.
+      In Node everything is a module. You must keep your code inside a module.
+   Browser js(Console) :
+   1.“window” is a predefined global object which has functions and attributes, that have to deal with window that has been drawn.
+   2.“location” is another predefined object in browsers, that has all the information about the url we have loaded.
+   3.“document”, which is also another predefined global variable in browsers, has the html which is rendered.
+   4.Browsers may have an object named “global”, but it will be the exact one as “window”.
+   5.Browsers don’t have “require” predefined. You may include it in your app for asynchronous file loading.
+     Moduling is not mandatory in client side JavaScript, i.e. in browsers.
+
+Q2.Watch & summary 5 points -So how does the browser actually render a website
+   1.Arrangement of header,body,paragraph,etc called HTML parsing to ctrate DOM tree.
+     Parsing-->DOM tree
+   2.Adding style,colour to the elements of HTML called CSSOM tree.And combining DOM & CSSOM tree to create Render tree.
+     DOM(JS)-->
+               -->Render tree
+     CSS    -->
+   3.Render tree consist of
+     render object
+     render style
+     render layers
+     line boxes
+   4.Layout computes where a node will be on sceen.
+   5.Painting computes bitmap and composites to screen.
+
+Q4.Execute the below code and write your description in txt file
+   a.typeof(1)//number
+   b.typeof(1.1)//number
+   c.typeof('1.1')//string
+   d.typeof(true)//boolean
+   e.typeof(null)//object
+   f.typeof(undefined)//undefined
+   h.typeof([])//object
+   i.typeof({})//object
+   j.typeof(NaN)//number
+
+ 
